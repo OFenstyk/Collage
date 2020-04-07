@@ -1,0 +1,70 @@
+.video {
+  $block: &;
+  position: relative;
+  // центрование по вертикали
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+
+  text-align: center;
+  background-repeat: no-repeat;
+
+  &__outer {
+    width: 100%;
+    background: url(../img/reeves.jpg);
+    background-size: cover;
+  }
+  .play{
+    justify-content: center;
+
+  }
+
+  .round-button {
+    box-sizing: border-box;
+    display:block;
+    width:80px;
+    height:80px;
+    padding-top: 14px;
+    padding-left: 8px;
+    line-height: 20px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background-color: rgba(0,0,0,0.5);
+    font-size:20px;
+    font-weight:bold;
+    transition: all 0.3s ease;
+    margin: auto;
+  }
+
+  iframe{
+    display: none;
+  }
+
+  p {
+    color: white;
+    margin-top: 25px;
+    font-family: Roboto;
+    font-weight: 900;
+    text-align:center;
+  }
+  .play:hover {
+    .round-button, p{
+      display: none;
+    }
+    iframe {
+    display: block;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 375px){
+  iframe{
+    max-width: 300px;
+  }
+}
+}
