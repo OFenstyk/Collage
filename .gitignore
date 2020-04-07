@@ -1,0 +1,10 @@
+gulp-4/node_modules
+gulp-4/package-lock.json
+gulp-4/package.json
+gulp-4/npm-shrinkwrap.json
+
+node_modules
+package-lock.json
+package.json
+npm-shrinkwrap.json
+
