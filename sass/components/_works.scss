@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .work__outer{
     $block: &;
     position: relative;
@@ -67,4 +68,75 @@
     text-align: right ;
     font-size: .8rem !important;
   }
+=======
+.work__outer{
+    $block: &;
+    position: relative;
+    // центрование по вертикали
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .works{
+      position: relative;
+  }
+  .top{
+    position: relative;
+    margin: 20px 40px;
+  }
+  .top h2{
+    position: absolute ;
+    font-size: 2em;
+    text-align: left;
+  }
+  .top p{
+    font-size: 1.4em;
+    text-align: right;
+  }
+  .next {
+    cursor: pointer;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    color: black;
+    transition: 0.6s ease;
+    user-select: none;
+    padding: 1rem;
+    right: 0;
+    margin-right: 2rem;
+  }
+  .gallery{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 0;
+  }
+  .gallery img{
+    margin: 0;
+    padding: 0;
+    max-width: 200px;
+    max-height: 253px;
+  }
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+}
+@media only screen and (max-width: 414px){
+  .top {
+    display: inline;
+}
+  .top h2{
+    position: unset !important;
+}
+  .top p {
+    position: relative;
+    text-align: right ;
+    font-size: .8rem !important;
+  }
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
 }

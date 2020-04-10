@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .swiper-pagination-bullets {
   margin-top: 20px;
   position: absolute;
@@ -21,4 +22,29 @@
   &:hover {
       cursor: pointer;
   }
+=======
+.swiper-pagination-bullets {
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.swiper-pagination-bullet {
+
+  display: inline-block;
+  margin: 0 8px;
+
+  background: $color-white;
+  transition: $link-transition;
+
+  &-active {
+    background:$color-blue;  
+  }
+
+  &:hover {
+      cursor: pointer;
+  }
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
 }

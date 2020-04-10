@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .team {
   $block: &;
   position: relative;
@@ -126,3 +127,133 @@
 
 }
 
+=======
+.team {
+  $block: &;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
+  color: white;
+  min-height: 400px;
+
+  &__outer {
+    width: 100%;
+    background-image: url(../img/fightclub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.team h1 {
+  margin-top: 50px;
+}
+.team p::after {
+  margin-top: 20px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: 100px;
+  background: #bbb;
+}
+.employees {
+  display: grid;
+  position: relative;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-top: 50px;
+  color: white;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-width: 270px; 
+    margin-bottom: 1em;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+.employees h2,
+.employees p {
+  text-align: center;
+  color: white;
+}
+
+
+.employees p {
+  font-size: 1.2em;
+}
+.employees p::after {
+  margin-top: 20px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 52%;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: 230px;
+  background: #bbb;
+}
+.lower {
+  display: grid;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.lower p {
+  padding: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  margin-bottom: 25px;
+  font-size: 1em;
+  color: white;
+}
+.lower button {
+  background: none;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+.lower button a {
+  text-decoration: none;
+  color: #00cccc;
+  background: none;
+  font-family: Roboto;
+  font-weight: 900;
+  padding: 10px;
+  border: 1px solid #00cccc;
+  border-radius: 2px;
+}
+.lower button a:hover {
+  color: white;
+  background: #00cccc;
+}
+
+@media only screen and (max-width: 414px){
+  
+  .employees img{
+    max-width: 150px;
+}
+.lower p{
+    font-size: .7rem;
+}
+
+}
+
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912

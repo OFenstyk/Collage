@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   $block: &;
 
@@ -6,4 +7,14 @@
   margin: 0 auto;
 
   overflow: hidden;
+=======
+.container {
+  $block: &;
+
+  max-width: 1440px;
+  padding: 2em 40px;
+  margin: 0 auto;
+
+  overflow: hidden;
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
 }

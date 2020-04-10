@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body,
 input,
 textarea {
@@ -38,3 +39,45 @@ h1, h2, h3, h4, h5, h6,
 
 
 }
+=======
+body,
+input,
+textarea {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    text-rendering: optimizeLegibility;
+}
+
+// resets
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: $link-transition;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+// headlines
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-headlines;
+    font-weight: $font-weight-extrabold;
+
+
+}
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
