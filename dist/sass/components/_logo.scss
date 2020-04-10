@@ -1,0 +1,18 @@
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+  &__caption {
+    font-weight: $font-weight-bold;
+    color: $color-blue;
+    margin-left: 10px;
+  }
+}
