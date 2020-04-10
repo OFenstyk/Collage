@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .menu {
   $block: &;
 
@@ -31,4 +32,39 @@
       }
     }
   }
+=======
+.menu {
+  $block: &;
+
+  position: relative;
+
+  ul {
+    //styles
+
+
+    //  .menu ul li
+    li {
+      display: inline-block;
+
+
+      // .menu ul li a
+      a {
+        text-decoration: none;
+        font-family: Roboto;
+        font-weight: 900;
+        margin-right: 20px;
+        padding: 0;
+        color: white;
+        position: relative;
+        display: block;
+
+
+        // .menu ul li a:hover{
+        &:hover {
+          color: #339999;
+        }
+      }
+    }
+  }
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
 }

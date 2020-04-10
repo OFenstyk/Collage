@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer{
     background-image: url(../img/footer-back.jpg);
     background-repeat: no-repeat;
@@ -248,3 +249,255 @@ footer{
     }
    
 }
+=======
+footer{
+    background-image: url(../img/footer-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    $block: &;
+    position: relative;
+    // центрование по вертикали
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    
+    .row{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row h4{
+        color: white;
+    }
+    .footer-logo{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: .5rem .5rem .5rem 0;
+      
+        &__img {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+        }
+      
+        &__caption {
+          font-weight: $font-weight-bold;
+          color: $color-blue;
+          margin-left: 10px;
+          margin-top: 10px;
+        }
+      }
+    .desc{
+        padding: 2rem 1rem;
+        color: rgba(255,255,255,1.00);
+        max-width: 250px;
+    }
+
+    .footer-nav{
+        padding: 2rem 1rem;
+        color: rgba(255,255,255,1.00);
+        max-width: 250px;
+    }
+
+    .row h4{
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .footer-form{
+        padding: 2rem 1rem;
+        color: rgba(255,255,255,1.00);
+        max-width: 250px;
+    }
+
+    .footer-form button{
+        margin: 0 auto;
+        position: absolute;
+        height: 1.85rem;
+        width: 2.5rem;
+    }
+    .footer__outer{
+        display: inline-flex;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .footer-links{
+        position: relative;
+    }
+    .footer-links ul li{
+        position: relative;
+        display: inline-flex;
+        margin: 5px 35px;
+        
+    }
+    .footer-menu {
+        position: relative;
+    }
+    .footer-menu p{
+        margin: 5px 15px;
+    }
+    #map{
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+    @media only screen and (max-width: 1024px){
+        .footer{
+
+     
+            .footer-form,
+            .desc,
+            .footer-nav{
+                padding: 0;
+            }   
+        }
+    }
+
+    @media only screen and (max-width: 414px){
+        .footer{
+         
+            .desc,
+            .footer-form,
+            .footer-nav{
+                padding: 0 !important; 
+            }
+            iframe{
+                max-width: 300px;
+              } 
+            
+        }
+    }
+
+    @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+    
+    #social {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .smGlobalBtn { /* global button class */
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border:1px solid #ddd; /* add border to the buttons */
+        padding: 0px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 2em;
+        -moz-border-radius: 27px;
+        -webkit-border-radius: 27px;
+    }
+    
+    /* facebook button class*/
+    
+    
+    .facebookBtn:before{ /* use :before to add the relevant icons */
+        font-family: "FontAwesome";
+        content: "\f09a"; /* add facebook icon */
+    }
+    
+    .facebookBtn:hover{
+        color: #4060A5;
+        background: #fff;
+        border-color: #4060A5; /* change the border color on mouse hover */
+    }
+    
+    /* twitter button class*/
+    
+    
+    .twitterBtn:before{
+          font-family: "FontAwesome";
+          content: "\f099"; /* add twitter icon */
+          
+    }
+    
+    .twitterBtn:hover{
+          color: #00ABE3;
+          background: #fff;
+          border-color: #00ABE3;
+    }
+    
+    /* google plus button class*/
+    
+    
+    .googleplusBtn:before{
+          font-family: "FontAwesome";
+          content: "\f0d5"; /* add googleplus icon */
+    }
+    
+    .googleplusBtn:hover{
+          color: #e64522;
+          background: #fff;
+          border-color: #e64522;
+    }
+    
+    /* linkedin button class*/
+    
+    
+    .linkedinBtn:before{
+          font-family: "FontAwesome";
+          content: "\f0e1"; /* add linkedin icon */
+    }
+    
+    .linkedinBtn:hover{
+          color: #0094BC;
+          background: #fff;
+          border-color: #0094BC;
+    }
+    
+    /* pinterest button class*/
+    
+    
+    .pinterestBtn:before{
+          font-family: "FontAwesome";
+          content: "\f0d2"; /* add pinterest icon */
+    }
+    
+    .pinterestBtn:hover{
+          color: #cb2027;
+          background: #fff;
+          border-color: #cb2027;
+    }
+    
+    /* tumblr button class*/
+    
+    
+    .tumblrBtn:before{
+          font-family: "FontAwesome";
+          content: "\f173"; /* add tumblr icon */
+    }
+    
+    .tumblrBtn:hover{
+          color: #3a5876;
+          background: #fff;
+          border-color: #3a5876;
+    }
+    
+    /* rss button class*/
+    
+    
+    .rssBtn:before{
+          font-family: "FontAwesome";
+          content: "\f09e"; /* add rss icon */
+    }
+    
+    .rssBtn:hover{
+          color: #e88845;
+          background: #fff;
+          border-color: #e88845;
+    }
+   
+}
+>>>>>>> 9306d6a61d75e6beae11d73c31b08554553d6912
