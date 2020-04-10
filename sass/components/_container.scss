@@ -1,0 +1,9 @@
+.container {
+  $block: &;
+
+  max-width: 1440px;
+  padding: 2em 40px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
