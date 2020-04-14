@@ -50,7 +50,7 @@
 ************************ -->
   <div class="hero__outer">
     <div class="hero container">
-    
+
 
 
       <div class="hero__slider">
@@ -131,7 +131,7 @@
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos.
         </p>
-        <button><a href="">LEARN MORE</a></button>
+        <button><a class="btn" href="">LEARN MORE</a></button>
       </div>
     </div>
   </div>
@@ -250,7 +250,7 @@
       </div>
       <div class="lower">
         <p>Become part of our dream team, let’s join us !</p>
-        <button><a href="">WE ARE HIRING</a></button>
+        <button><a class="btn" href="">WE ARE HIRING</a></button>
       </div>
     </div>
 
@@ -266,19 +266,40 @@
           See All Projects On Dribble<a class="next" onclick="plusSlides(1)">&#10095;</a>
         </p>
       </div>
-      <div class="gallery ">
-        <img class="zoom" src="./img/1.jpg" alt="" />
-        <img class="zoom" src="./img/2.jpg" alt="" />
-        <img class="zoom" src="./img/3.jpg" alt="" />
-        <img class="zoom" src="./img/4.jpg" alt="" />
-        <img class="zoom" src="./img/5.jpg" alt="" />
-        <img class="zoom" src="./img/6.jpg" alt="" />
-        <img class="zoom" src="./img/7.jpg" alt="" />
-        <img class="zoom" src="./img/8.jpg" alt="" />
-        <img class="zoom" src="./img/9.jpg" alt="" />
-        <img class="zoom" src="./img/10.jpg" alt="" />
-        <img class="zoom" src="./img/11.jpg" alt="" />
-        <img class="zoom" src="./img/12.jpg" alt="" />
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./img/1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/10.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/11.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/12.jpg)"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./img/1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/10.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/11.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/12.jpg)"></div>
+        </div>
       </div>
       <div class="lower">
         <button><a href="">LEARN MORE</a></button>
@@ -427,10 +448,12 @@
           <h4>STAY IN TOUCH</h4>
           <p>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Subscribe">
-              <span class="input-group-btn">
-                <button type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-              </span>
+              <form action="https://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=techkshetra', 'popupwindow',  'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
+                <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+                <input name="uri" value="techkshetra" type="hidden">
+                <input name="loc" value="en_US" type="hidden">
+                <input class="subscribebtn btn" value="Subscribe Now!" type="submit">
+                  </form>
               <div class="col-md-2 footer-social">
                 <h4>Follow Us</h4>
                 <div id="social">
@@ -485,12 +508,12 @@
   <script>
     // Initialize and add the map
     function initMap() {
-      // The location of Uluru
+      // The location of home
       var home = { lat: 48.199619, lng: 16.360203 };
-      // The map, centered at Uluru
+      // The map, centered at home
       var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 17, center: home });
-      // The marker, positioned at Uluru
+      // The marker, positioned at home
       var marker = new google.maps.Marker({ position: home, map: map });
     }
   </script>
