@@ -798,7 +798,20 @@ ul {
   .top p {
     position: relative;
     text-align: right;
-    font-size: .8rem !important; } }
+    font-size: .8rem !important; }
+  .works {
+    height: 400px !important; }
+  .swiper-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; }
+  .swiper-slide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery-top {
+    height: 65% !important;
+    width: 100%; } }
 
 .quotes {
   position: relative;
