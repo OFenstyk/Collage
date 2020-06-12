@@ -369,7 +369,7 @@ p {
   min-height: 700px; }
   .hero__outer {
     width: 100%;
-    background-image: url(../img/background-new.webp);
+    background-image: url(../img/background-new.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -511,7 +511,7 @@ p {
   min-height: 600px; }
   .video__outer {
     width: 100%;
-    background: url(../img/reeves.webp);
+    background: url(../img/reeves.jpg);
     background-size: cover;
     background-position: center; }
   .video .play {
@@ -654,7 +654,7 @@ p {
   min-height: 400px; }
   .team__outer {
     width: 100%;
-    background-image: url(../img/fightclub.webp);
+    background-image: url(../img/fightclub.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -899,7 +899,7 @@ p {
   height: 100vh; }
   .quotes__outer {
     width: 100%;
-    background-image: url(../img/quotes-back.webp);
+    background-image: url(../img/quotes-back.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   .quotes__caption h4,
@@ -989,7 +989,7 @@ p {
     grid-template-columns: repeat(auto-fill, 200px); } }
 
 footer {
-  background-image: url(../img/footer-back.webp);
+  background-image: url(../img/footer-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
