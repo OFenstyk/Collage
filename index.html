@@ -414,6 +414,15 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="./js/common.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+  <script>
+    (function () {
+      var button = document.getElementById('toggle-menu');
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        var menu = document.getElementById('main-menu');
+        menu.classList.toggle('is-open');
+      });
+    }());
+  </script>
 </body>
 </html>
